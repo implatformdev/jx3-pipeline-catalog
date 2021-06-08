@@ -14,7 +14,7 @@ spec:
           env:
           - name: NPM_CONFIG_USERCONFIG
             value: /tekton/home/npm/.npmrc
-          image: uses:jenkins-x/jx3-pipeline-catalog/tasks/javascript/release.yaml@versionStream
+          image: uses:jenkins-x/jx3-pipeline-catalog/tasks/javascript-ui-nginx/release.yaml@versionStream
           name: ""
           resources:
             requests:
@@ -34,8 +34,10 @@ spec:
           resources: {}
         - name: build-npm-install
           resources: {}
-#        - name: build-npm-test
-#          resources: {}
+        - name: build-npm-test
+          resources: {}
+        - name: build-ui-build
+          resources: {}
         - name: check-registry
           resources: {}
         - name: build-container-build

@@ -26,11 +26,9 @@ spec:
           resources: {}
         - name: build-npm-install
           resources: {}
-#        - name: build-npm-test
-#          resources: {}
-        - name: check-registry
+        - name: build-npm-test
           resources: {}
-        - name: build-container-build
+        - name: check-registry
           resources: {}
         - name: promote-jx-preview
           resources: {}
