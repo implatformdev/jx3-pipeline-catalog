@@ -94,10 +94,9 @@ git add .
 git commit -m "Delete app $APPNAME"
 git push
 
-# TODO Check if required
 # echo "Deleting repositories resources in jx namespace..."
 # Delete sr resources in jx namespace
-# kubectl -n jx delete sr $ORGANIZATION-$APPNAME
+kubectl -n jx delete sr $ORGANIZATION-$APPNAME
 
 echo "Deleting  resources in staging namespace created for the database dependency..."
 # Delete resources in staging created for the database dependency
