@@ -14,6 +14,10 @@ image:
   tag: dev
   pullPolicy: IfNotPresent
 
+istio:
+  domain: 35.226.184.122.nip.io
+  gateway: istio-system/jx-istio-gateway
+
 # optional list of image pull secrets to use to pull images
 jx:
   # optional image pull secrets

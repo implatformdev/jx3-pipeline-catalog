@@ -4,9 +4,9 @@ metadata:
   name: {{ .Values.service.name }}
 spec:
   hosts:
-  - {{ .Values.service.name }}
+  - {{ .Values.service.name }}.{{ .Values.istio.domain }}
   gateways:
-  - istio-ingressgateway
+  - {{ .Values.istio.gateway }}
   http:
   - route:
     - destination:
